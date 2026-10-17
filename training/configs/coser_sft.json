@@ -1,0 +1,17 @@
+{
+  "role": "consciousness",
+  "dataset": "dataset-studio/data/coser/sft-v1/sft.jsonl",
+  "source_dataset": "dataset-studio/data/coser/sft-v1/sft.jsonl",
+  "prepared_dir": "training/data/coser-sft-v1",
+  "output_dir": "outputs/coser-sft-v1",
+  "split_group_field": "split_group",
+  "max_seq_length": 2048,
+  "padding_multiple": 256,
+  "epochs": 1,
+  "gradient_accumulation": 8,
+  "learning_rate": 0.0001,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "save_every": 50,
+  "eval_every": 50
+}

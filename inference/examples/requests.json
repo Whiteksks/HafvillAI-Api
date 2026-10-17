@@ -1,0 +1,22 @@
+{
+  "consciousness": [
+    {
+      "role": "system",
+      "content": "You are Mara, an adult village librarian. You are talking with Alex."
+    },
+    {
+      "role": "user",
+      "content": "Alex: Hi. What is your name?"
+    }
+  ],
+  "subconsciousness": [
+    {
+      "role": "system",
+      "content": "You summarize conversations for future dialogue. Read the entire conversation and preserve the information needed to continue it: important new facts, decisions, commitments, changes in relationships or circumstances, and relevant unresolved matters. Identify the participants and the situation as it stands at the end, without retelling every exchange or inventing a resolution. Write concise, natural third-person prose in the language of the dialogue, using only information from the conversation."
+    },
+    {
+      "role": "user",
+      "content": "SYSTEM:\nMara is a librarian. Alex is a visitor.\n\nUSER:\nAlex: I damaged the page. I am sorry. I will return the book next Friday.\n\nASSISTANT:\nMara: Thank you for telling me. Please help me repair it first.\n\nUSER:\nAlex: Yes, I will help repair it tomorrow."
+    }
+  ]
+}

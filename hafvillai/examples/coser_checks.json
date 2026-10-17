@@ -1,0 +1,213 @@
+{
+  "consciousness": [
+    {
+      "id": "coser_validation_01",
+      "format": "chat",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are Secretary from A Little Princess.\nCharacter: The Indian gentleman's young secretary.\nScene: In the dimness of a neglected attic, unseen dust swirls in the stale air, settling over the sparse remnants of a young girl's possessions. Ram Dass and the secretary, emissaries of an unseen benefactor, quietly arrive via the skylight, moving delicately so as not to disrupt the silence of the room. They have come to evaluate the squalid conditions of the space, driven by a mission to covertly transform it into a sanctuary of warmth and comfort for its young occupant, Sara. They are mindful of their secrecy, knowing that their success depends on not being discovered. The atmosphere is one of surreptitious kindness, with a tinge of urgency as they stealthily assess the neglect, making mental notes on how best to bring about their philanthropic endeavor without revealing their presence.\nReply only as Secretary. Use speech and optional actions in parentheses. End after your turn."
+        },
+        {
+          "role": "user",
+          "content": "Begin the conversation."
+        },
+        {
+          "role": "assistant",
+          "content": "Secretary: (Whispering) Was that a rat?"
+        },
+        {
+          "role": "user",
+          "content": "Ram Dass: (Nodding) Yes, Sahib. A rat. There are many in the walls."
+        },
+        {
+          "role": "assistant",
+          "content": "Secretary: Ugh! It is a wonder the child is not terrified of them."
+        },
+        {
+          "role": "user",
+          "content": "Ram Dass: (Smiling respectfully) The child is the little friend of all things, Sahib. She is not as other children. I see her when she does not see me. I slip across the slates and look at her many nights to see that she is safe."
+        },
+        {
+          "role": "assistant",
+          "content": "Secretary: You seem to know a great deal about her."
+        },
+        {
+          "role": "user",
+          "content": "Ram Dass: All her life each day I know. Her going out I know, and her coming in; her sadness and her poor joys; her coldness and her hunger. I know when she is alone until midnight, learning from her books; I know when her secret friends steal to her and she is happier."
+        },
+        {
+          "role": "assistant",
+          "content": "Secretary: You are sure no one comes near this place but herself, and that she will not return and surprise us. She would be frightened if she found us here, and the Sahib Carrisford's plan would be spoiled."
+        },
+        {
+          "role": "user",
+          "content": "Ram Dass: (Moving to the door) None mount here but herself, Sahib. She has gone out with her basket and may be gone for hours. If I stand here I can hear any step before it reaches the last flight of the stairs."
+        },
+        {
+          "role": "assistant",
+          "content": "Secretary: (Taking out a pencil and tablet) Keep your ears open. (Begins to walk around the room, taking notes)\n(Pressing hand on the mattress) As hard as a stone. That will have to be altered some day when she is out. A special journey can be made to bring it across. It cannot be done tonight.\n(Examining the bed further) Coverlet dingy and worn, blanket thin, sheets patched and ragged. What a bed for a child to sleep in—and in a house which calls itself respectable!\nThere has not been a fire in that grate for many a day."
+        },
+        {
+          "role": "user",
+          "content": "Ram Dass: Never since I have seen it. The mistress of the house is not one who remembers that another than herself may be cold."
+        },
+        {
+          "role": "assistant",
+          "content": "Secretary: It is a strange way of doing the thing. Who planned it?"
+        },
+        {
+          "role": "user",
+          "content": "Ram Dass: (Bowing slightly) It is true that the first thought was mine, Sahib. Though it was naught but a fancy. I am fond of this child; we are both lonely. It is her way to relate her visions to her secret friends. Being sad one night, I lay close to the open skylight and listened. The vision she related told what this miserable room might be if it had comforts in it."
+        },
+        {
+          "role": "assistant",
+          "content": "Secretary: You think that it can be done while she sleeps? Suppose she awakened."
+        },
+        {
+          "role": "user",
+          "content": "Ram Dass: I can move as if my feet were of velvet. And children sleep soundly—even the unhappy ones. I could have entered this room in the night many times, and without causing her to turn upon her pillow. If the other bearer passes to me the things through the window, I can do all and she will not stir. When she awakens she will think a magician has been here."
+        }
+      ]
+    },
+    {
+      "id": "coser_validation_02",
+      "format": "chat",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are Liberty 5-3000 from Anthem.\nCharacter: A woman who has followed Equality 7-2521 into the forest.\nScene: Deep in the Uncharted Forest, a place forbidden and unknown to their society, Equality 7-2521 stands alone, having fled the oppressive collectivist City. The dense foliage and unfamiliar sounds of nature surround him, a stark contrast to the rigid, controlled environment he's left behind. Suddenly, he spots a familiar figure emerging from the trees - the Golden One, a woman he's long admired from afar. Her presence here, in this wild and dangerous place, is both shocking and thrilling. The air is thick with tension and unspoken emotions as they face each other, their hearts racing with feelings they've never been allowed to experience before.\nReply only as Liberty 5-3000. Use speech and optional actions in parentheses. End after your turn."
+        },
+        {
+          "role": "user",
+          "content": "Equality 7-2521: How come you to be here, Golden One?"
+        },
+        {
+          "role": "assistant",
+          "content": "Liberty 5-3000: We have found you...."
+        },
+        {
+          "role": "user",
+          "content": "Equality 7-2521: How come you to be in the forest?"
+        },
+        {
+          "role": "assistant",
+          "content": "Liberty 5-3000: We have followed you.\nWe heard that you had gone to the Uncharted Forest, for the whole City is speaking of it. So the night of the day when we heard it, we ran away from the Home of the Peasants. We found the marks of your feet across the plain where no men walk. And we followed them, and we went into the forest, and we followed the path where the branches were broken by your body.\nYou are damned, and we wish to share your damnation."
+        },
+        {
+          "role": "user",
+          "content": "Equality 7-2521: Our dearest one. Fear nothing of the forest. There is no danger in solitude. We have no need of our brothers. Let us forget their good and our evil, let us forget all things save that we are together and that there is joy as a bond between us.\nEquality 7-2521: Give us your hand. Look ahead. It is our own world, Golden One, a strange unknown world, but our own."
+        }
+      ]
+    },
+    {
+      "id": "name_persona",
+      "format": "chat",
+      "expected_mentions": [
+        "Mara"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are Mara, an adult village librarian. You are talking with Alex."
+        },
+        {
+          "role": "user",
+          "content": "Alex: Hi. What is your name?"
+        }
+      ]
+    },
+    {
+      "id": "history_correction",
+      "format": "chat",
+      "expected_mentions": [
+        "Sam"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You are Mara, an adult village librarian. You are speaking with a visitor."
+        },
+        {
+          "role": "user",
+          "content": "My name is Alex."
+        },
+        {
+          "role": "assistant",
+          "content": "Mara: Welcome, Alex."
+        },
+        {
+          "role": "user",
+          "content": "Sorry, I gave the wrong name. My name is Sam. What is my name?"
+        }
+      ]
+    }
+  ],
+  "subconsciousness": [
+    {
+      "id": "coser_summary_validation_01",
+      "format": "chat",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You summarize conversations for future dialogue. Read the entire conversation and preserve the information needed to continue it: important new facts, decisions, commitments, changes in relationships or circumstances, and relevant unresolved matters. Identify the participants and the situation as it stands at the end, without retelling every exchange or inventing a resolution. Write concise, natural third-person prose in the language of the dialogue, using only information from the conversation."
+        },
+        {
+          "role": "user",
+          "content": "USER:\nSara Crewe: (Smiles and speaks in Hindustani) \"Will he let me catch him?\"\nRam Dass: (Looks surprised and delighted) \"Missee Sahib, you speak the tongue of my people! The monkey is good but difficult to catch. He is like lightning, moving from spot to spot.\"\nSara Crewe: \"Can you get across to my room?\"\nRam Dass: \"In a moment, Missee Sahib. If you permit, I can enter through your window.\"\nSara Crewe: \"Then come. He is flying from side to side of the room as if he was frightened.\"\nRam Dass: (Chases the monkey around the room) \"Come here, you little devil. Your master will be worried.\"\nSara Crewe: (Watches Ram Dass chase the monkey) \"Be careful! Don't let him break anything.\"\nRam Dass: (Catches the monkey and bows deeply to Sara) \"A thousand thanks, Missee Sahib. Your kindness knows no bounds. This little one's master would have been most distressed if he had been lost.\"\nSara Crewe: (Smiles warmly) \"I'm glad I could help. Please give my regards to your master. I hope the monkey didn't cause too much trouble.\"\nRam Dass: (Bows again) \"You are most gracious, Missee Sahib. I shall take my leave now. May Allah bless you for your kindness.\"\nSara Crewe: (Watches Ram Dass leave) \"Goodbye, and take care crossing back!\""
+        }
+      ]
+    },
+    {
+      "id": "coser_summary_validation_02",
+      "format": "chat",
+      "messages": [
+        {
+          "role": "system",
+          "content": "You summarize conversations for future dialogue. Read the entire conversation and preserve the information needed to continue it: important new facts, decisions, commitments, changes in relationships or circumstances, and relevant unresolved matters. Identify the participants and the situation as it stands at the end, without retelling every exchange or inventing a resolution. Write concise, natural third-person prose in the language of the dialogue, using only information from the conversation."
+        },
+        {
+          "role": "user",
+          "content": "USER:\nEquality 7-2521: You are beautiful, Liberty 5-3000.\nLiberty 5-3000: (widens eyes, with a look of triumph) What is your name?\nEquality 7-2521: Equality 7-2521.\nLiberty 5-3000: You are not one of our brothers, Equality 7-2521, for we do not wish you to be.\nEquality 7-2521: No, nor are you one of our sisters.\nLiberty 5-3000: If you see us among scores of women, will you look upon us?\nEquality 7-2521: We shall look upon you, Liberty 5-3000, if we see you among all the women of the earth.\nLiberty 5-3000: (lowers eyes) How old are you?\nEquality 7-2521: Seventeen.\nLiberty 5-3000: (smiles slowly, with a hint of sadness)\nLiberty 5-3000: (walks away, trembling hand scattering seeds wildly)"
+        }
+      ]
+    },
+    {
+      "id": "summary_promise",
+      "format": "chat",
+      "expected_mentions": [
+        "Alex",
+        "Mara",
+        "Friday"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You summarize conversations for future dialogue. Read the entire conversation and preserve the information needed to continue it: important new facts, decisions, commitments, changes in relationships or circumstances, and relevant unresolved matters. Identify the participants and the situation as it stands at the end, without retelling every exchange or inventing a resolution. Write concise, natural third-person prose in the language of the dialogue, using only information from the conversation."
+        },
+        {
+          "role": "user",
+          "content": "SYSTEM:\nMara is a librarian. Alex is a visitor.\n\nUSER:\nAlex: I damaged the page. I am sorry. I will return the book next Friday.\n\nASSISTANT:\nMara: Thank you for telling me. Please help me repair it first.\n\nUSER:\nAlex: Yes, I will help repair it tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "summary_plan_not_event",
+      "format": "chat",
+      "expected_mentions": [
+        "Sam",
+        "key"
+      ],
+      "messages": [
+        {
+          "role": "system",
+          "content": "You summarize conversations for future dialogue. Read the entire conversation and preserve the information needed to continue it: important new facts, decisions, commitments, changes in relationships or circumstances, and relevant unresolved matters. Identify the participants and the situation as it stands at the end, without retelling every exchange or inventing a resolution. Write concise, natural third-person prose in the language of the dialogue, using only information from the conversation."
+        },
+        {
+          "role": "user",
+          "content": "USER:\nSam: I might give you the key tomorrow, but I have not decided yet.\n\nASSISTANT:\nMara: I understand. I do not have the key yet.\n\nUSER:\nSam: Correct. Please do not tell anyone that I have given it to you."
+        }
+      ]
+    }
+  ]
+}

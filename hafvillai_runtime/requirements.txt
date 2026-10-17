@@ -1,0 +1,12 @@
+# Compatible GPU stack used by the trained adapters.
+# Install CUDA-enabled PyTorch before packages that compile GPU extensions.
+torch==2.9.1+cu128
+transformers==4.57.6
+huggingface-hub==0.36.2
+safetensors==0.8.0
+# Keep TileLang, TVM FFI, and CUTLASS versions aligned.
+apache-tvm-ffi==0.1.9
+tilelang==0.1.8
+nvidia-cutlass-dsl==4.4.2
+quack-kernels==0.3.4
+triton==3.5.1

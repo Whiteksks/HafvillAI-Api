@@ -1,0 +1,3 @@
+# Install from hafvillai/ after CUDA-enabled PyTorch.
+-r ../hafvillai_runtime/requirements.txt
+-e ../mamba-source

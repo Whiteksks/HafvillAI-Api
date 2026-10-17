@@ -1,0 +1,2 @@
+# Training uses the same pinned model stack as inference.
+-r ../hafvillai_runtime/requirements.txt

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Prepare CoSER conversation summaries for Hafvillai training.">
+  <title>Dataset Studio — Hafvillai</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/summaries.js?v=5" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <aside class="sidebar" aria-label="Workspace navigation">
+    <a class="brand" href="/" aria-label="Hafvillai Dataset Studio home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>hafvillai<span class="brand-sub">DATASET STUDIO</span></span>
+    </a>
+    <div class="nav-label">WORKSPACE</div>
+    <nav>
+      <a href="#summaries" class="nav-item current" aria-current="page">CoSER summaries</a>
+    </nav>
+  </aside>
+  <div class="workspace">
+    <main id="main" tabindex="-1">
+      <section id="summaries" class="summary-workspace" aria-labelledby="summary-title">
+        <div class="panel studio-panel">
+          <h2 id="summary-title">CoSER summary dataset</h2>
+          <p class="muted">One clean CoSER scene per summary, with train/validation provenance preserved.</p>
+          <p id="summary-source" class="mode-description">Checking prepared dialogues…</p>
+          <div class="summary-fields">
+            <label>OpenAI API key
+              <input id="summary-key" type="password" autocomplete="off" placeholder="Use the server key or enter a key" spellcheck="false">
+            </label>
+            <label>Model
+              <input id="summary-model" type="text" spellcheck="false" required>
+            </label>
+            <label>Batch of 100 dialogues
+              <select id="summary-batch"><option value="0">Full dataset</option></select>
+              <span class="field-hint">Choose a source range. The final batch may contain fewer than 100 dialogues.</span>
+            </label>
+            <label>Concurrent requests
+              <input id="summary-concurrency" type="number" min="1" max="16" value="4">
+              <span class="field-hint">Each concurrent request processes a separate dialogue.</span>
+            </label>
+            <label>Dialogue limit in the selected range
+              <input id="summary-limit" type="number" min="0" max="1000000" value="0">
+              <span class="field-hint">0 processes the full selected range; otherwise process its first N dialogues.</span>
+            </label>
+            <label>Output token limit
+              <input id="summary-tokens" type="number" min="256" max="32768" value="8192">
+              <span class="field-hint">Includes internal reasoning tokens for reasoning models.</span>
+            </label>
+          </div>
+          <p id="summary-selection" class="mode-description"></p>
+          <p id="summary-key-status" class="mode-description"></p>
+          <button id="summary-check" class="button secondary" disabled>Check connection</button>
+          <p id="summary-connection" class="mode-description" role="status"></p>
+        </div>
+        <div class="panel studio-panel">
+          <label class="summary-label" for="summary-instruction">Instruction saved in the dataset</label>
+          <textarea id="summary-instruction" rows="4" spellcheck="false"></textarea>
+          <p class="mode-description">Saved automatically as the system message in each JSONL record.</p>
+          <label class="summary-label" for="summary-rules">Summary generation rules</label>
+          <textarea id="summary-rules" rows="15" spellcheck="false"></textarea>
+          <button id="summary-default-rules" type="button" class="text-button" disabled>Use default instruction and rules</button>
+          <p id="summary-rules-status" class="mode-description" role="status"></p>
+          <p class="mode-description">Rules are sent with the instruction. The model returns summary text; Studio assembles JSONL locally. Starting a run sends selected dialogues to the OpenAI API and uses API credits.</p>
+          <div class="actions">
+            <button id="summary-start" class="button primary" disabled>Start</button>
+            <button id="summary-resume" class="button secondary" hidden>Resume</button>
+            <button id="summary-stop" class="button secondary" hidden>Stop</button>
+          </div>
+          <p id="summary-status" class="mode-description" role="status">Ready</p>
+          <p id="summary-run" class="mode-description"></p>
+          <progress id="summary-progress" max="100" value="0" aria-label="Summary generation progress" hidden></progress>
+          <div id="summary-error" class="notice error" role="alert" hidden></div>
+        </div>
+        <div class="panel studio-panel">
+          <h3>Results</h3>
+          <p class="mode-description">Each record contains the instruction, full clean dialogue, and generated summary, with CoSER source metadata and train/validation split.</p>
+          <a id="summary-download" class="button secondary" aria-disabled="true">Download JSONL</a>
+          <p id="summary-usage" class="mode-description"></p>
+          <h3 class="summary-preview-title">Merged dataset</h3>
+          <p class="mode-description">Merge complete saved batches from the same source. Limited test runs and incomplete batches are excluded. The final short batch is included; the latest complete version wins for duplicate batches.</p>
+          <button id="summary-merge" class="button secondary" disabled>Merge complete batches</button>
+          <p id="summary-merge-status" class="mode-description" role="status"></p>
+          <a id="summary-merged-download" class="button secondary" hidden>Download merged JSONL</a>
+          <h3 class="summary-preview-title">Latest summary</h3>
+          <p id="summary-preview" class="summary-preview muted">Available after the first completed dialogue.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

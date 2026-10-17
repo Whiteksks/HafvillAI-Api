@@ -1,0 +1,55 @@
+name: hafvillai-inference
+
+services:
+  api:
+    build:
+      context: ../..
+      dockerfile: inference/deploy/Dockerfile
+    image: hafvillai-inference:local
+    restart: unless-stopped
+    init: true
+    env_file:
+      - ../.env
+    environment:
+      HAFVILLAI_HOST: 0.0.0.0
+      HAFVILLAI_PORT: "8000"
+      HAFVILLAI_ARTIFACTS_DIR: /app/inference/artifacts
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ../artifacts:/app/inference/artifacts:ro
+      - kernel-cache:/var/cache/hafvillai
+    read_only: true
+    tmpfs:
+      - /tmp:size=2g,mode=1777
+    shm_size: 1gb
+    stop_grace_period: 5m
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  https:
+    image: caddy:2
+    profiles: [https]
+    restart: unless-stopped
+    environment:
+      HAFVILLAI_DOMAIN: ${HAFVILLAI_DOMAIN:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  kernel-cache:
+  caddy-data:
+  caddy-config:
